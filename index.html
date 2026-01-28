@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Juice Joint</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+
+    <!-- brand -->
+    <a class="navbar-brand brand-box" href="#">
+      Juice Joint 🍹
+    </a>
+
+    <!-- toggle button (for mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- navbar links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rewards">Rewards</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- order now button -->
+    <a href="#" class="btn order-btn">ORDER NOW</a>
+
+  </div>
+</nav>
+
+<!-- alternating sections -->
+<section class="info-section">
+
+  <!-- 1 about us -->
+  <div class="container">
+    <div class="row align-items-center info-block">
+      <div class="col-md-6">
+        <img src="images/about.jpg" class="img-fluid info-img" alt="Fresh juices">
+      </div>
+      <div class="col-md-6 info-text">
+        <h2>About Us</h2>
+        <p>
+          The Juice Joint offers 100% natural juices made from fresh,
+          hand-picked fruits with no added sugar or preservatives.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 new flavours -->
+  <div class="container">
+    <div class="row align-items-center info-block flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="images/flavours.jpg" class="img-fluid info-img" alt="New flavours">
+      </div>
+      <div class="col-md-6 info-text">
+        <h2>New Flavours Have Arrived</h2>
+        <p>
+          Discover our latest seasonal blends made with exotic fruits,
+          bold flavours, and refreshing combinations.
+        </p>
+        <a href="#" class="btn brand-btn">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 new bites -->
+  <div class="container">
+    <div class="row align-items-center info-block">
+      <div class="col-md-6">
+        <img src="images/bites.jpg" class="img-fluid info-img" alt="New bites">
+      </div>
+      <div class="col-md-6 info-text">
+        <h2>New Bites for Your Favourite Beverage</h2>
+        <p>
+          Pair your juice with our new bites — perfectly toasted snacks
+          designed to complement every sip.
+        </p>
+         <a href="#" class="btn brand-btn">View Menu</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 locations -->
+  <div class="container">
+    <div class="row align-items-center info-block flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="images/locations.jpg" class="img-fluid info-img" alt="Locations in Italy">
+      </div>
+      <div class="col-md-6 info-text">
+        <h2>30+ Locations Across Italy</h2>
+        <p>
+          You can find the Juice Joint in over 30 locations across Italy,
+          bringing freshness closer to you wherever you are.
+        </p>
+        <a href="#" class="btn brand-btn">View Locations</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+  </main>
+
+  <!-- js -->
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- cookie popup -->
+<div id="cookie-popup" class="cookie-popup">
+  <div class="cookie-box">
+    <h3>We value your privacy</h3>
+    <p>
+      We use cookies to enhance your browsing experience and analyze site traffic.
+    </p>
+
+    <div class="cookie-buttons">
+      <button class="btn accept-btn" onclick="acceptCookies()">Accept all cookies</button>
+      <button class="btn reject-btn" onclick="rejectCookies()">Reject all cookies</button>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<!-- footer -->
+<footer class="site-footer">
+
+  <!-- top footer -->
+  <div class="footer-top container">
+    <div class="row align-items-center">
+
+      <!-- stay connected -->
+      <div class="col-md-6">
+        <h5>Stay Connected</h5>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- download app section -->
+      <div class="col-md-6 text-md-end">
+        <h5>Get the Juice Joint App</h5>
+        <div class="app-buttons">
+          <button class="store-btn">App Store</button>
+          <button class="store-btn">Google Play</button>
+        </div>
+        <p class="signup-text">
+          No smartphone? <a href="#">Sign up here</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- bottom footer -->
+  <div class="footer-bottom">
+    <div class="container text-center">
+
+      <h4 class="footer-logo">Juice Joint</h4>
+
+      <div class="footer-links">
+        <a href="#">International</a>
+        <a href="#">Franchising</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Find a Store</a>
+        <a href="#">About Us</a>
+        <a href="#">Nutrition</a>
+        <a href="#">FAQ</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Legal</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Sitemap</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+</html>
